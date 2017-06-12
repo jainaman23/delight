@@ -1,3 +1,17 @@
 name = Delight
 description = Incredible front-end framework for faster and easier web development.
 core = 7.x
+package = Theme
+
+; Regions
+regions[header]        = 'Header'
+regions[highlighted]   = 'Highlighted'
+regions[left_sidebar]  = 'Left Sidebar'
+regions[content]       = 'Main Content'
+regions[right_sidebar] = 'Right Sidebar'
+regions[testimonials]  = 'Testimonials'
+regions[footer]        = 'Footer'
+regions[page_top]      = 'Page top'
+regions[page_bottom]   = 'Page bottom'
+
+
