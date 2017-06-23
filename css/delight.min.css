@@ -1,0 +1,1055 @@
+.packets-1 {
+  overflow: auto;
+}
+.packets-1 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+
+.packets-2 {
+  overflow: auto;
+}
+.packets-2 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50%;
+}
+
+.packets-3 {
+  overflow: auto;
+}
+.packets-3 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 33.33333%;
+}
+
+.packets-4 {
+  overflow: auto;
+}
+.packets-4 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 25%;
+}
+
+.packets-5 {
+  overflow: auto;
+}
+.packets-5 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 20%;
+}
+
+.packets-6 {
+  overflow: auto;
+}
+.packets-6 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 16.66667%;
+}
+
+.packets-7 {
+  overflow: auto;
+}
+.packets-7 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 14.28571%;
+}
+
+.packets-8 {
+  overflow: auto;
+}
+.packets-8 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 12.5%;
+}
+
+.packets-9 {
+  overflow: auto;
+}
+.packets-9 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 11.11111%;
+}
+
+.packets-10 {
+  overflow: auto;
+}
+.packets-10 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 10%;
+}
+
+.packets-11 {
+  overflow: auto;
+}
+.packets-11 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 9.09091%;
+}
+
+.packets-12 {
+  overflow: auto;
+}
+.packets-12 > .packs {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 8.33333%;
+}
+
+.case-lg-1 {
+  overflow: auto;
+}
+.case-lg-1 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-1 > .case {
+    width: 100%;
+  }
+}
+
+.case-md-1 {
+  overflow: auto;
+}
+.case-md-1 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-1 > .case {
+    width: 100%;
+  }
+}
+
+.case-sm-1 {
+  overflow: auto;
+}
+.case-sm-1 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-1 > .case {
+    width: 100%;
+  }
+}
+
+.case-vs-1 {
+  overflow: auto;
+}
+.case-vs-1 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-1 > .case {
+    width: 100%;
+  }
+}
+
+.case-xs-1 {
+  overflow: auto;
+}
+.case-xs-1 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-1 > .case {
+    width: 100%;
+  }
+}
+
+.case-lg-2 {
+  overflow: auto;
+}
+.case-lg-2 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-2 > .case {
+    width: 50%;
+  }
+}
+
+.case-md-2 {
+  overflow: auto;
+}
+.case-md-2 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-2 > .case {
+    width: 50%;
+  }
+}
+
+.case-sm-2 {
+  overflow: auto;
+}
+.case-sm-2 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-2 > .case {
+    width: 50%;
+  }
+}
+
+.case-vs-2 {
+  overflow: auto;
+}
+.case-vs-2 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-2 > .case {
+    width: 50%;
+  }
+}
+
+.case-xs-2 {
+  overflow: auto;
+}
+.case-xs-2 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-2 > .case {
+    width: 50%;
+  }
+}
+
+.case-lg-3 {
+  overflow: auto;
+}
+.case-lg-3 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-3 > .case {
+    width: 33.33333%;
+  }
+}
+
+.case-md-3 {
+  overflow: auto;
+}
+.case-md-3 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-3 > .case {
+    width: 33.33333%;
+  }
+}
+
+.case-sm-3 {
+  overflow: auto;
+}
+.case-sm-3 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-3 > .case {
+    width: 33.33333%;
+  }
+}
+
+.case-vs-3 {
+  overflow: auto;
+}
+.case-vs-3 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-3 > .case {
+    width: 33.33333%;
+  }
+}
+
+.case-xs-3 {
+  overflow: auto;
+}
+.case-xs-3 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-3 > .case {
+    width: 33.33333%;
+  }
+}
+
+.case-lg-4 {
+  overflow: auto;
+}
+.case-lg-4 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-4 > .case {
+    width: 25%;
+  }
+}
+
+.case-md-4 {
+  overflow: auto;
+}
+.case-md-4 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-4 > .case {
+    width: 25%;
+  }
+}
+
+.case-sm-4 {
+  overflow: auto;
+}
+.case-sm-4 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-4 > .case {
+    width: 25%;
+  }
+}
+
+.case-vs-4 {
+  overflow: auto;
+}
+.case-vs-4 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-4 > .case {
+    width: 25%;
+  }
+}
+
+.case-xs-4 {
+  overflow: auto;
+}
+.case-xs-4 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-4 > .case {
+    width: 25%;
+  }
+}
+
+.case-lg-5 {
+  overflow: auto;
+}
+.case-lg-5 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-5 > .case {
+    width: 20%;
+  }
+}
+
+.case-md-5 {
+  overflow: auto;
+}
+.case-md-5 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-5 > .case {
+    width: 20%;
+  }
+}
+
+.case-sm-5 {
+  overflow: auto;
+}
+.case-sm-5 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-5 > .case {
+    width: 20%;
+  }
+}
+
+.case-vs-5 {
+  overflow: auto;
+}
+.case-vs-5 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-5 > .case {
+    width: 20%;
+  }
+}
+
+.case-xs-5 {
+  overflow: auto;
+}
+.case-xs-5 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-5 > .case {
+    width: 20%;
+  }
+}
+
+.case-lg-6 {
+  overflow: auto;
+}
+.case-lg-6 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-6 > .case {
+    width: 16.66667%;
+  }
+}
+
+.case-md-6 {
+  overflow: auto;
+}
+.case-md-6 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-6 > .case {
+    width: 16.66667%;
+  }
+}
+
+.case-sm-6 {
+  overflow: auto;
+}
+.case-sm-6 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-6 > .case {
+    width: 16.66667%;
+  }
+}
+
+.case-vs-6 {
+  overflow: auto;
+}
+.case-vs-6 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-6 > .case {
+    width: 16.66667%;
+  }
+}
+
+.case-xs-6 {
+  overflow: auto;
+}
+.case-xs-6 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-6 > .case {
+    width: 16.66667%;
+  }
+}
+
+.case-lg-7 {
+  overflow: auto;
+}
+.case-lg-7 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-7 > .case {
+    width: 14.28571%;
+  }
+}
+
+.case-md-7 {
+  overflow: auto;
+}
+.case-md-7 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-7 > .case {
+    width: 14.28571%;
+  }
+}
+
+.case-sm-7 {
+  overflow: auto;
+}
+.case-sm-7 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-7 > .case {
+    width: 14.28571%;
+  }
+}
+
+.case-vs-7 {
+  overflow: auto;
+}
+.case-vs-7 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-7 > .case {
+    width: 14.28571%;
+  }
+}
+
+.case-xs-7 {
+  overflow: auto;
+}
+.case-xs-7 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-7 > .case {
+    width: 14.28571%;
+  }
+}
+
+.case-lg-8 {
+  overflow: auto;
+}
+.case-lg-8 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-8 > .case {
+    width: 12.5%;
+  }
+}
+
+.case-md-8 {
+  overflow: auto;
+}
+.case-md-8 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-8 > .case {
+    width: 12.5%;
+  }
+}
+
+.case-sm-8 {
+  overflow: auto;
+}
+.case-sm-8 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-8 > .case {
+    width: 12.5%;
+  }
+}
+
+.case-vs-8 {
+  overflow: auto;
+}
+.case-vs-8 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-8 > .case {
+    width: 12.5%;
+  }
+}
+
+.case-xs-8 {
+  overflow: auto;
+}
+.case-xs-8 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-8 > .case {
+    width: 12.5%;
+  }
+}
+
+.case-lg-9 {
+  overflow: auto;
+}
+.case-lg-9 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-9 > .case {
+    width: 11.11111%;
+  }
+}
+
+.case-md-9 {
+  overflow: auto;
+}
+.case-md-9 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-9 > .case {
+    width: 11.11111%;
+  }
+}
+
+.case-sm-9 {
+  overflow: auto;
+}
+.case-sm-9 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-9 > .case {
+    width: 11.11111%;
+  }
+}
+
+.case-vs-9 {
+  overflow: auto;
+}
+.case-vs-9 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-9 > .case {
+    width: 11.11111%;
+  }
+}
+
+.case-xs-9 {
+  overflow: auto;
+}
+.case-xs-9 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-9 > .case {
+    width: 11.11111%;
+  }
+}
+
+.case-lg-10 {
+  overflow: auto;
+}
+.case-lg-10 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-10 > .case {
+    width: 10%;
+  }
+}
+
+.case-md-10 {
+  overflow: auto;
+}
+.case-md-10 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-10 > .case {
+    width: 10%;
+  }
+}
+
+.case-sm-10 {
+  overflow: auto;
+}
+.case-sm-10 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-10 > .case {
+    width: 10%;
+  }
+}
+
+.case-vs-10 {
+  overflow: auto;
+}
+.case-vs-10 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-10 > .case {
+    width: 10%;
+  }
+}
+
+.case-xs-10 {
+  overflow: auto;
+}
+.case-xs-10 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-10 > .case {
+    width: 10%;
+  }
+}
+
+.case-lg-11 {
+  overflow: auto;
+}
+.case-lg-11 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-11 > .case {
+    width: 9.09091%;
+  }
+}
+
+.case-md-11 {
+  overflow: auto;
+}
+.case-md-11 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-11 > .case {
+    width: 9.09091%;
+  }
+}
+
+.case-sm-11 {
+  overflow: auto;
+}
+.case-sm-11 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-11 > .case {
+    width: 9.09091%;
+  }
+}
+
+.case-vs-11 {
+  overflow: auto;
+}
+.case-vs-11 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-11 > .case {
+    width: 9.09091%;
+  }
+}
+
+.case-xs-11 {
+  overflow: auto;
+}
+.case-xs-11 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-11 > .case {
+    width: 9.09091%;
+  }
+}
+
+.case-lg-12 {
+  overflow: auto;
+}
+.case-lg-12 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1280px) {
+  .case-lg-12 > .case {
+    width: 8.33333%;
+  }
+}
+
+.case-md-12 {
+  overflow: auto;
+}
+.case-md-12 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 1080px) {
+  .case-md-12 > .case {
+    width: 8.33333%;
+  }
+}
+
+.case-sm-12 {
+  overflow: auto;
+}
+.case-sm-12 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 799px) {
+  .case-sm-12 > .case {
+    width: 8.33333%;
+  }
+}
+
+.case-vs-12 {
+  overflow: auto;
+}
+.case-vs-12 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 639px) {
+  .case-vs-12 > .case {
+    width: 8.33333%;
+  }
+}
+
+.case-xs-12 {
+  overflow: auto;
+}
+.case-xs-12 > .case {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media all and (min-width: 360px) {
+  .case-xs-12 > .case {
+    width: 8.33333%;
+  }
+}
+
+.cover {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.cover:before, .cover:after {
+  content: " ";
+  display: table;
+}
+.cover:after {
+  clear: both;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/*# sourceMappingURL=delight.min.css.map */

@@ -1,14 +1,38 @@
 /// Grid system
-///
-/// Generate semantic grid columns with these mixins.
+///   Generate semantic grid columns with these mixins
+
+@import '../variables';
+
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
 
 /// Centered container element
-@mixin cover($gutter: $grid-gutter-width) {
+@mixin make-cover($gutter: $grid-gutter-width) {
   margin-right: auto;
   margin-left: auto;
   padding-left:  floor(($gutter / 2));
   padding-right: ceil(($gutter / 2));
-  @include clearfix;
+  @include clearfix();
 }
 
 /// Creates a wrapper for a series of columns
@@ -18,87 +42,83 @@
   @include clearfix;
 }
 
-/// Generate the extra small columns
-@mixin make-xs-column($columns, $gutter: $grid-gutter-width) {
-  position: relative;
-  float: left;
-  width: percentage(($columns / $grid-columns));
-  min-height: 1px;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
-}
-
 @mixin make-xs-column-offset($columns) {
-  margin-left: percentage(($columns / $grid-columns));
-}
-
-// Generate the small columns
-@mixin make-sm-column($columns, $gutter: $grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
-
-  @media (min-width: $screen-sm-min) {
-    float: left;
-    width: percentage(($columns / $grid-columns));
-  }
-}
-
-@mixin make-sm-column-offset($columns) {
-  @media (min-width: $screen-sm-min) {
+  @media (min-width: $screen-xs-min) {
     margin-left: percentage(($columns / $grid-columns));
   }
 }
 
-// Generate the medium columns
-@mixin make-md-column($columns, $gutter: $grid-gutter-width) {
-  position: relative;
+/// Packets Generator
+///
+/// @param $i;
+///   Counter
+@mixin make-packets ($i: 1, $columns: $grid-columns) {
+  @for $i from (1) through $columns {
+    $list: ".packets-#{$i}";
+    #{$list} {
+      overflow: auto;
+
+      & > .packs {
+        @include isolate-case;
+        width: percentage(1/$i);
+      }
+    }
+  }
+}
+
+/// Case Generator for large screen.
+@mixin make-lg-case($i: 1, $columns: $grid-columns, $case: ".case-lg-#{$i}") {
+  @for $i from (1) through $columns {
+    @each $case in lg, md, sm, vs, xs {
+      .case-#{$case}-#{$i} {
+        overflow: auto;
+
+        & > .case {
+          @include isolate-case;
+          // For large Screen
+          @if $case == lg {
+            @media all and (min-width: $lg) {
+              width: percentage(1/$i);
+            }
+          }
+
+          // For Tablet Screen
+          @if $case == md {
+            @media all and (min-width: $md) {
+              width: percentage(1/$i);
+            }
+          }
+
+          // For Mobile Screen
+          @if $case == sm {
+            @media all and (min-width: $sm) {
+              width: percentage(1/$i);
+            }
+          }
+
+          // For Small Screen
+          @if $case == vs {
+            @media all and (min-width: $vs) {
+              width: percentage(1/$i);
+            }
+          }
+
+          // For iphone Screen
+          @if $case == xs {
+            @media all and (min-width: $xs) {
+              width: percentage(1/$i);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/// Case
+@mixin isolate-case() {
+  float: left;
   min-height: 1px;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
-
-  @media (min-width: $screen-md-min) {
-    float: left;
-    width: percentage(($columns / $grid-columns));
-  }
-}
-
-@mixin make-md-column-offset($columns) {
-  @media (min-width: $screen-md-min) {
-    margin-left: percentage(($columns / $grid-columns));
-  }
-}
-
-// Generate the large columns
-@mixin make-lg-column($columns, $gutter: $grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
-
-  @media (min-width: $screen-lg-min) {
-    float: left;
-    width: percentage(($columns / $grid-columns));
-  }
-}
-
-@mixin make-lg-column-offset($columns) {
-  @media (min-width: $screen-lg-min) {
-    margin-left: percentage(($columns / $grid-columns));
-  }
-}
-
-@mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
-  @for $i from (1 + 1) through $grid-columns {
-    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
-  }
-  #{$list} {
-    position: relative;
-    // Prevent columns from collapsing when empty
-    min-height: 1px;
-    // Inner gutter via padding
-    padding-left:  ceil(($grid-gutter-width / 2));
-    padding-right: floor(($grid-gutter-width / 2));
-  }
+  padding-left:  ceil(($grid-gutter-width / 2));
+  padding-right: floor(($grid-gutter-width / 2));
 }
