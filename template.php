@@ -9,5 +9,5 @@
  */
 function delight_preprocess_page(&$variables) {
   $directory = drupal_get_path('theme', 'delight');
-  kpr($variables);
+  // kpr($variables);
 }
