@@ -52,65 +52,48 @@
 ///
 /// @param $i;
 ///   Counter
-@mixin make-packets ($i: 1, $columns: $grid-columns) {
-  @for $i from (1) through $columns {
-    $list: ".packets-#{$i}";
-    #{$list} {
-      overflow: auto;
+@mixin make-packs ($i: 1, $columns: $grid-columns) {
+  $case: "lg";
+  $list-all: ".pack-#{$case}-#{$i}";
+  @each $case in lg, md, sm, xs, xxs {
+    @media all and (min-width: $case) {
+      @for $i from (1) through $columns {
+        $list: ".pack-#{$case}-#{$i}";
+        $list-all: "#{$list-all}, #{$list}";
 
-      & > .packs {
-        @include isolate-case;
-        width: percentage(1/$i);
+        #{$list} {
+          width: percentage((1/$columns)*$i);
+        }
       }
     }
+  }
+
+  #{$list-all} {
+    float: left;
+    min-height: 1px;
   }
 }
 
 /// Case Generator for large screen.
-@mixin make-lg-case($i: 1, $columns: $grid-columns, $case: ".case-lg-#{$i}") {
-  @for $i from (1) through $columns {
-    @each $case in lg, md, sm, vs, xs {
-      .case-#{$case}-#{$i} {
-        overflow: auto;
+@mixin make-boxes($i: 1, $columns: $grid-columns) {
+  $case-all: ".box-lg-#{$i}";
+  @each $case in lg, md, sm, xs, xxs {
+    @media all and (min-width: $case) {
+      @for $i from (1) through $columns {
+        $case-all: "#{$case-all}, .box-#{$case}-#{$i}";
 
-        & > .case {
-          @include isolate-case;
-          // For large Screen
-          @if $case == lg {
-            @media all and (min-width: $lg) {
-              width: percentage(1/$i);
-            }
-          }
-
-          // For Tablet Screen
-          @if $case == md {
-            @media all and (min-width: $md) {
-              width: percentage(1/$i);
-            }
-          }
-
-          // For Mobile Screen
-          @if $case == sm {
-            @media all and (min-width: $sm) {
-              width: percentage(1/$i);
-            }
-          }
-
-          // For Small Screen
-          @if $case == vs {
-            @media all and (min-width: $vs) {
-              width: percentage(1/$i);
-            }
-          }
-
-          // For iphone Screen
-          @if $case == xs {
-            @media all and (min-width: $xs) {
-              width: percentage(1/$i);
-            }
+        .box-#{$case}-#{$i} {
+          & > .box {
+            width: percentage(1/$i);
           }
         }
       }
+    }
+  }
+
+  #{$case-all} {
+    & > .box {
+      @include isolate-case;
     }
   }
 }

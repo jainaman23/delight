@@ -500,6 +500,14 @@
   padding-right: 15px;
 }
 
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
 .cover {
   margin-right: auto;
   margin-left: auto;
@@ -511,14 +519,6 @@
   display: table;
 }
 .cover:after {
-  clear: both;
-}
-
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
   clear: both;
 }
 
@@ -534,8 +534,4 @@
   clear: both;
 }
 
-img {
-  max-width: 100%;
-}
-
-/*# sourceMappingURL=delight.min.css.map */
+/*# sourceMappingURL=grid.css.map */

@@ -1,7 +1,7 @@
 @import 'package/mixin/grid';
 
-@include make-packets;
-@include make-lg-case;
+@include make-packs;
+@include make-boxes;
 
 .cover {
   @include make-cover;
@@ -11,3 +11,11 @@
   @include clearfix;
 }
 
+.row {
+  @include make-row;
+}
+
+/// Components
+img {
+  max-width: 100%;
+}
