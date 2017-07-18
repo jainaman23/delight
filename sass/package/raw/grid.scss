@@ -1,8 +1,8 @@
 /// Grid
 @import '../mixin/grid';
 
-@include make-packs;
-@include make-boxes;
+@include make-all-packs;
+@include make-all-boxes;
 
 .clearfix {
   @include clearfix;

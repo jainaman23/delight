@@ -1,4 +1,4 @@
-@media all and (min-width: lg) {
+@media all and (min-width: 1280px) {
   .pack-lg-1 {
     width: 8.33333%;
   }
@@ -47,7 +47,7 @@
     width: 100%;
   }
 }
-@media all and (min-width: md) {
+@media all and (min-width: 1080px) {
   .pack-md-1 {
     width: 8.33333%;
   }
@@ -96,7 +96,7 @@
     width: 100%;
   }
 }
-@media all and (min-width: sm) {
+@media all and (min-width: 799px) {
   .pack-sm-1 {
     width: 8.33333%;
   }
@@ -145,7 +145,7 @@
     width: 100%;
   }
 }
-@media all and (min-width: xs) {
+@media all and (min-width: 639px) {
   .pack-xs-1 {
     width: 8.33333%;
   }
@@ -194,7 +194,7 @@
     width: 100%;
   }
 }
-@media all and (min-width: xxs) {
+@media all and (min-width: 360px) {
   .pack-xxs-1 {
     width: 8.33333%;
   }
@@ -248,7 +248,7 @@
   min-height: 1px;
 }
 
-@media all and (min-width: lg) {
+@media all and (min-width: 1280px) {
   .box-lg-1 > .box {
     width: 100%;
   }
@@ -297,7 +297,7 @@
     width: 8.33333%;
   }
 }
-@media all and (min-width: md) {
+@media all and (min-width: 1080px) {
   .box-md-1 > .box {
     width: 100%;
   }
@@ -346,7 +346,7 @@
     width: 8.33333%;
   }
 }
-@media all and (min-width: sm) {
+@media all and (min-width: 799px) {
   .box-sm-1 > .box {
     width: 100%;
   }
@@ -395,7 +395,7 @@
     width: 8.33333%;
   }
 }
-@media all and (min-width: xs) {
+@media all and (min-width: 639px) {
   .box-xs-1 > .box {
     width: 100%;
   }
@@ -444,7 +444,7 @@
     width: 8.33333%;
   }
 }
-@media all and (min-width: xxs) {
+@media all and (min-width: 360px) {
   .box-xxs-1 > .box {
     width: 100%;
   }

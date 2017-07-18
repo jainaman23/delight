@@ -52,50 +52,22 @@
 ///
 /// @param $i;
 ///   Counter
-@mixin make-packs ($i: 1, $columns: $grid-columns) {
-  $case: "lg";
-  $list-all: ".pack-#{$case}-#{$i}";
-  @each $case in lg, md, sm, xs, xxs {
-    @media all and (min-width: $case) {
-      @for $i from (1) through $columns {
-        $list: ".pack-#{$case}-#{$i}";
-        $list-all: "#{$list-all}, #{$list}";
-
-        #{$list} {
-          width: percentage((1/$columns)*$i);
-        }
-      }
-    }
-  }
-
-  #{$list-all} {
-    float: left;
-    min-height: 1px;
-  }
+@mixin make-all-packs {
+  @include make-lg-packs;
+  @include make-md-packs;
+  @include make-sm-packs;
+  @include make-xs-packs;
+  @include make-xxs-packs;
+  @include make-packs;
 }
 
-/// Case Generator for large screen.
-@mixin make-boxes($i: 1, $columns: $grid-columns) {
-  $case-all: ".box-lg-#{$i}";
-  @each $case in lg, md, sm, xs, xxs {
-    @media all and (min-width: $case) {
-      @for $i from (1) through $columns {
-        $case-all: "#{$case-all}, .box-#{$case}-#{$i}";
-
-        .box-#{$case}-#{$i} {
-          & > .box {
-            width: percentage(1/$i);
-          }
-        }
-      }
-    }
-  }
-
-  #{$case-all} {
-    & > .box {
-      @include isolate-case;
-    }
-  }
+@mixin make-all-boxes {
+  @include make-lg-boxes;
+  @include make-md-boxes;
+  @include make-sm-boxes;
+  @include make-xs-boxes;
+  @include make-xxs-boxes;
+  @include make-boxes;
 }
 
 /// Case
@@ -104,4 +76,176 @@
   min-height: 1px;
   padding-left:  ceil(($grid-gutter-width / 2));
   padding-right: floor(($grid-gutter-width / 2));
+}
+
+@mixin make-lg-packs($i: 1, $columns: $grid-columns) {
+  $packs-all: ".pack-lg-#{$i}";
+  @media all and (min-width: $lg) {
+    @for $i from (1) through $columns {
+      $packs: ".pack-lg-#{$i}";
+      $packs-all: "#{$packs-all}, #{$packs}";
+      #{$packs} {
+        width: percentage((1/$columns)*$i);
+      }
+    }
+  }
+}
+@mixin make-md-packs($i: 1, $columns: $grid-columns) {
+  $packs-all: ".pack-md-#{$i}";
+  @media all and (min-width: $md) {
+    @for $i from (1) through $columns {
+      $packs: ".pack-md-#{$i}";
+      $packs-all: "#{$packs-all}, #{$packs}";
+      #{$packs} {
+        width: percentage((1/$columns)*$i);
+      }
+    }
+  }
+}
+@mixin make-sm-packs($i: 1, $columns: $grid-columns) {
+  $packs-all: ".pack-sm-#{$i}";
+  @media all and (min-width: $sm) {
+    @for $i from (1) through $columns {
+      $packs: ".pack-sm-#{$i}";
+      $packs-all: "#{$packs-all}, #{$packs}";
+      #{$packs} {
+        width: percentage((1/$columns)*$i);
+      }
+    }
+  }
+}
+@mixin make-xs-packs($i: 1, $columns: $grid-columns) {
+  $packs-all: ".pack-xs-#{$i}";
+  @media all and (min-width: $xs) {
+    @for $i from (1) through $columns {
+      $packs: ".pack-xs-#{$i}";
+      $packs-all: "#{$packs-all}, #{$packs}";
+      #{$packs} {
+        width: percentage((1/$columns)*$i);
+      }
+    }
+  }
+}
+@mixin make-xxs-packs($i: 1, $columns: $grid-columns) {
+  $packs-all: ".pack-xxs-#{$i}";
+  @media all and (min-width: $xxs) {
+    @for $i from (1) through $columns {
+      $packs: ".pack-xxs-#{$i}";
+      $packs-all: "#{$packs-all}, #{$packs}";
+      #{$packs} {
+        width: percentage((1/$columns)*$i);
+      }
+    }
+  }
+}
+
+@mixin make-lg-boxes($i: 1, $columns: $grid-columns) {
+  $box-all: ".box-lg-#{$i}";
+  @media all and (min-width: $lg) {
+    @for $i from (1) through $columns {
+      $box: ".box-lg-#{$i}";
+      $box-all: "#{$box-all}, #{$box}";
+      #{$box} {
+        & > .box {
+          width: percentage(1/$i);
+        }
+      }
+    }
+  }
+}
+
+@mixin make-md-boxes($i: 1, $columns: $grid-columns) {
+  $box-all: ".box-md-#{$i}";
+  @media all and (min-width: $md) {
+    @for $i from (1) through $columns {
+      $box: ".box-md-#{$i}";
+      $box-all: "#{$box-all}, #{$box}";
+      #{$box} {
+        & > .box {
+          width: percentage(1/$i);
+        }
+      }
+    }
+  }
+}
+
+
+@mixin make-sm-boxes($i: 1, $columns: $grid-columns) {
+  $box-all: ".box-sm-#{$i}";
+  @media all and (min-width: $sm) {
+    @for $i from (1) through $columns {
+      $box: ".box-sm-#{$i}";
+      $box-all: "#{$box-all}, #{$box}";
+      #{$box} {
+        & > .box {
+          width: percentage(1/$i);
+        }
+      }
+    }
+  }
+}
+
+@mixin make-xs-boxes($i: 1, $columns: $grid-columns) {
+  $box-all: ".box-xs-#{$i}";
+  @media all and (min-width: $xs) {
+    @for $i from (1) through $columns {
+      $box: ".box-xs-#{$i}";
+      $box-all: "#{$box-all}, #{$box}";
+      #{$box} {
+        & > .box {
+          width: percentage(1/$i);
+        }
+      }
+    }
+  }
+}
+
+@mixin make-xxs-boxes($i: 1, $columns: $grid-columns) {
+  $box-all: ".box-xxs-#{$i}";
+  @media all and (min-width: $xxs) {
+    @for $i from (1) through $columns {
+      $box: ".box-xxs-#{$i}";
+      $box-all: "#{$box-all}, #{$box}";
+      #{$box} {
+        & > .box {
+          width: percentage(1/$i);
+        }
+      }
+    }
+  }
+}
+
+
+@mixin make-boxes($i: 1, $columns: $grid-columns) {
+  $case: 'lg';
+  $box-all: ".box-#{$case}-#{$i}";
+  @each $case in lg, md, sm, xs, xxs {
+    @for $i from (1) through $columns {
+      $box: ".box-#{$case}-#{$i}";
+      $box-all: "#{$box-all}, #{$box}";
+    }
+  }
+
+  #{$box-all} {
+    & > .box {
+      @include isolate-case;
+    }
+  }
+}
+
+@mixin make-packs($i: 1, $columns: $grid-columns) {
+  $case: 'lg';
+  $pack-all: ".pack-#{$case}-#{$i}";
+  @each $case in lg, md, sm, xs, xxs {
+    @for $i from (1) through $columns {
+      $pack: ".pack-#{$case}-#{$i}";
+      $pack-all: "#{$pack-all}, #{$pack}";
+    }
+  }
+
+
+  #{$pack-all} {
+    float: left;
+    min-height: 1px;
+  }
 }

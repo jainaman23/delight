@@ -1,7 +1,7 @@
 @import 'package/mixin/grid';
 
-@include make-packs;
-@include make-boxes;
+@include make-all-packs;
+@include make-all-boxes;
 
 .cover {
   @include make-cover;
