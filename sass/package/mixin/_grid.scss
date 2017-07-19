@@ -227,6 +227,8 @@
   }
 
   #{$box-all} {
+    @include clearfix;
+
     & > .box {
       @include isolate-case;
     }
