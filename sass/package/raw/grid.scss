@@ -5,7 +5,7 @@
 @include make-all-boxes;
 
 .clearfix {
-  @include clearfix;
+  @include siteclearfix;
 }
 
 .cover {

@@ -15,7 +15,7 @@
 //
 // Source: http://nicolasgallagher.com/micro-clearfix-hack/
 
-@mixin clearfix() {
+@mixin siteclearfix {
   &:before,
   &:after {
     content: " "; // 1
@@ -32,14 +32,14 @@
   margin-left: auto;
   padding-left:  floor(($gutter / 2));
   padding-right: ceil(($gutter / 2));
-  @include clearfix();
+  @include siteclearfix;
 }
 
 /// Creates a wrapper for a series of columns
 @mixin make-row($gutter: $grid-gutter-width) {
   margin-left:  ceil(($gutter / -2));
   margin-right: floor(($gutter / -2));
-  @include clearfix;
+  @include siteclearfix;
 }
 
 @mixin make-xs-column-offset($columns) {
@@ -227,7 +227,7 @@
   }
 
   #{$box-all} {
-    @include clearfix;
+    @include siteclearfix;
 
     & > .box {
       @include isolate-case;

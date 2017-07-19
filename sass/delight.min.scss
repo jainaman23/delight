@@ -1,14 +1,19 @@
 @import 'package/mixin/grid';
+@import 'compass';
 
 @include make-all-packs;
 @include make-all-boxes;
+
+* {
+ @include box-sizing(border-box);
+}
 
 .cover {
   @include make-cover;
 }
 
 .clearfix {
-  @include clearfix;
+  @include siteclearfix;
 }
 
 .row {
@@ -18,4 +23,6 @@
 /// Components
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
+
