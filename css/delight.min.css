@@ -500,17 +500,18 @@
 .box-lg-1:after, .box-lg-1:after, .box-lg-2:after, .box-lg-3:after, .box-lg-4:after, .box-lg-5:after, .box-lg-6:after, .box-lg-7:after, .box-lg-8:after, .box-lg-9:after, .box-lg-10:after, .box-lg-11:after, .box-lg-12:after, .box-md-1:after, .box-md-2:after, .box-md-3:after, .box-md-4:after, .box-md-5:after, .box-md-6:after, .box-md-7:after, .box-md-8:after, .box-md-9:after, .box-md-10:after, .box-md-11:after, .box-md-12:after, .box-sm-1:after, .box-sm-2:after, .box-sm-3:after, .box-sm-4:after, .box-sm-5:after, .box-sm-6:after, .box-sm-7:after, .box-sm-8:after, .box-sm-9:after, .box-sm-10:after, .box-sm-11:after, .box-sm-12:after, .box-xs-1:after, .box-xs-2:after, .box-xs-3:after, .box-xs-4:after, .box-xs-5:after, .box-xs-6:after, .box-xs-7:after, .box-xs-8:after, .box-xs-9:after, .box-xs-10:after, .box-xs-11:after, .box-xs-12:after, .box-xxs-1:after, .box-xxs-2:after, .box-xxs-3:after, .box-xxs-4:after, .box-xxs-5:after, .box-xxs-6:after, .box-xxs-7:after, .box-xxs-8:after, .box-xxs-9:after, .box-xxs-10:after, .box-xxs-11:after, .box-xxs-12:after {
   clear: both;
 }
-.box-lg-1 > .box, .box-lg-1 > .box, .box-lg-2 > .box, .box-lg-3 > .box, .box-lg-4 > .box, .box-lg-5 > .box, .box-lg-6 > .box, .box-lg-7 > .box, .box-lg-8 > .box, .box-lg-9 > .box, .box-lg-10 > .box, .box-lg-11 > .box, .box-lg-12 > .box, .box-md-1 > .box, .box-md-2 > .box, .box-md-3 > .box, .box-md-4 > .box, .box-md-5 > .box, .box-md-6 > .box, .box-md-7 > .box, .box-md-8 > .box, .box-md-9 > .box, .box-md-10 > .box, .box-md-11 > .box, .box-md-12 > .box, .box-sm-1 > .box, .box-sm-2 > .box, .box-sm-3 > .box, .box-sm-4 > .box, .box-sm-5 > .box, .box-sm-6 > .box, .box-sm-7 > .box, .box-sm-8 > .box, .box-sm-9 > .box, .box-sm-10 > .box, .box-sm-11 > .box, .box-sm-12 > .box, .box-xs-1 > .box, .box-xs-2 > .box, .box-xs-3 > .box, .box-xs-4 > .box, .box-xs-5 > .box, .box-xs-6 > .box, .box-xs-7 > .box, .box-xs-8 > .box, .box-xs-9 > .box, .box-xs-10 > .box, .box-xs-11 > .box, .box-xs-12 > .box, .box-xxs-1 > .box, .box-xxs-2 > .box, .box-xxs-3 > .box, .box-xxs-4 > .box, .box-xxs-5 > .box, .box-xxs-6 > .box, .box-xxs-7 > .box, .box-xxs-8 > .box, .box-xxs-9 > .box, .box-xxs-10 > .box, .box-xxs-11 > .box, .box-xxs-12 > .box {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .cover {

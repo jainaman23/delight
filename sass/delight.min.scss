@@ -8,6 +8,10 @@
  @include box-sizing(border-box);
 }
 
+.box {
+  @include isolate-case;
+}
+
 .cover {
   @include make-cover;
 }
