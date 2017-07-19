@@ -53,20 +53,20 @@
 /// @param $i;
 ///   Counter
 @mixin make-all-packs {
-  @include make-lg-packs;
-  @include make-md-packs;
-  @include make-sm-packs;
-  @include make-xs-packs;
   @include make-xxs-packs;
+  @include make-xs-packs;
+  @include make-sm-packs;
+  @include make-md-packs;
+  @include make-lg-packs;
   @include make-packs;
 }
 
 @mixin make-all-boxes {
-  @include make-lg-boxes;
-  @include make-md-boxes;
-  @include make-sm-boxes;
-  @include make-xs-boxes;
   @include make-xxs-boxes;
+  @include make-xs-boxes;
+  @include make-sm-boxes;
+  @include make-md-boxes;
+  @include make-lg-boxes;
   @include make-boxes;
 }
 
