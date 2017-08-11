@@ -1,0 +1,23 @@
+/**
+ * Buttons.
+ */
+@import 'compass';
+
+/// Buttons
+///  Theme Button tag and convert link to button style.
+///
+/// @param $background-color
+///   Background color of button. By default its transparent.
+///   Pass background-color with quotes as parameter.
+/// @param $text-color
+///   Color of text. By default its white.
+///
+@mixin bt($background-color: transparent, $text-color: #fff, $display: inline, $border-radius: 0, $type: 0) {
+  width: 100%;
+  padding: 10px 30px;
+  background-color: unquote($background-color);
+  text-decoration: none;
+  color: unquote($text-color);
+  display: $display;
+  @include border-radius($border-radius);
+}
