@@ -1,4 +1,5 @@
 @import 'package/mixin/grid';
+@import 'package/raw/components/buttons';
 @import 'compass';
 
 @include make-all-packs;
@@ -30,3 +31,14 @@ img {
   vertical-align: middle;
 }
 
+// Buttons
+.bt {
+  @include bt($text-color: red);
+}
+// Buttons
+.bt-1 {
+  @include bt($background-color: green, $type: 1);
+}
+.bt-2 {
+  @include bt($background-color: green, $type: 2);
+}

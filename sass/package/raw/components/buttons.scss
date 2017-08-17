@@ -2,9 +2,10 @@
  * Buttons.
  */
 @import 'compass';
+@import 'component_variables';
 
 /// Buttons
-///  Theme Button tag and convert link to button style.
+///  Convert link to button style.
 ///
 /// @param $background-color
 ///   Background color of button. By default its transparent.
@@ -15,9 +16,41 @@
 @mixin bt($background-color: transparent, $text-color: #fff, $display: inline, $border-radius: 0, $type: 0) {
   width: 100%;
   padding: 10px 30px;
-  background-color: unquote($background-color);
   text-decoration: none;
-  color: unquote($text-color);
+  color: $text-color;
   display: $display;
   @include border-radius($border-radius);
+
+  /// Explicitly Case For Transparent Background.
+  @if $background-color == transparent {
+    border: 1px solid $text-color;
+    background-image: $background-color;
+
+    &:hover {
+      @include background-image(linear-gradient($text-color, darken($text-color, $button_darker_percent + $button_hover)));
+      color: #fff;
+    }
+    &:active {
+      @include background-image(linear-gradient(darken($text-color, 10%)darken($text-color, $button_darker_percent + $button_active)));
+      color: #fff;
+    }
+  }
+
+  @else {
+    /// General Hover and Active Effect.
+    @include background-image(linear-gradient($background-color, darken($background-color, $button_darker_percent)));
+    border: 1px solid $background-color;
+
+    &:hover {
+      @include background-image(linear-gradient(darken($background-color, $button_hover), darken($background-color, $button_darker_percent + $button_hover)));
+    }
+
+    &:active {
+      @include background-image(linear-gradient(darken($background-color, $button_hover + $button_active)darken($background-color, $button_darker_percent + $button_active)));
+    }
+
+    /// Type 1
+    @if $background-color != transparent && $type == 1 {
+    }
+  }
 }
