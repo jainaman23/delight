@@ -169,5 +169,4 @@
   </footer>
 <?php endif; ?>
 <a href="#" class="bt">Button</a>
-<a href="#" class="bt-1">Button</a>
-<a href="#" class="bt-2">Button</a>
+</div>
