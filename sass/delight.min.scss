@@ -33,12 +33,6 @@ img {
 
 // Buttons
 .bt {
-  @include bt($text-color: red);
+  @include transparent_button($text-color: #0ff00f);
 }
-// Buttons
-.bt-1 {
-  @include bt($background-color: green, $type: 1);
-}
-.bt-2 {
-  @include bt($background-color: green, $type: 2);
-}
+
