@@ -13,32 +13,16 @@
 /// @param $text-color
 ///   Color of text. By default its white.
 ///
-@mixin bt($background-color: transparent, $text-color: #fff, $display: inline, $border-radius: 0, $type: 0) {
+@mixin simple_button($background-color: transparent, $text-color: #fff, $display: inline, $border-radius: 0, $icon: false, $icon-image: '/sites/all/themes/delight/default_images/default_btn.png') {
   width: 100%;
   padding: 10px 30px;
   text-decoration: none;
   color: $text-color;
   display: $display;
   @include border-radius($border-radius);
+  background-color: $background-color;
 
-  /// Explicitly Case For Transparent Background.
-  @if $background-color == transparent {
-    border: 1px solid $text-color;
-    background-image: $background-color;
-
-    &:hover {
-      @include background-image(linear-gradient($text-color, darken($text-color, $button_darker_percent + $button_hover)));
-      color: #fff;
-    }
-    &:active {
-      @include background-image(linear-gradient(darken($text-color, 10%)darken($text-color, $button_darker_percent + $button_active)));
-      color: #fff;
-    }
-  }
-
-  @else {
-    /// General Hover and Active Effect.
-    @include background-image(linear-gradient($background-color, darken($background-color, $button_darker_percent)));
+  @if $background-color != transparent {
     border: 1px solid $background-color;
 
     &:hover {
@@ -48,9 +32,95 @@
     &:active {
       @include background-image(linear-gradient(darken($background-color, $button_hover + $button_active)darken($background-color, $button_darker_percent + $button_active)));
     }
+  }
 
-    /// Type 1
-    @if $background-color != transparent && $type == 1 {
+  @if $icon == true {
+    position: relative;
+    padding-left: 60px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 100%;
+      background-image: url($icon-image);
+      background-position: center center;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      border-right: 1px solid $text-color;
     }
+  }
+}
+
+@mixin transparent_button($text-color: #000, $display: inline, $border-radius: 0, $icon: false) {
+  $background-color: transparent;
+  /// Include Default Button.
+  @include simple-button($background-color, $text-color, $display, $border-radius, $icon);
+  border: 1px solid $text-color;
+  /// Hover Effect
+  &:hover {
+    @include background-image(linear-gradient($text-color, darken($text-color, $button_darker_percent + $button_hover)));
+    border: 1px solid darken($text-color, $button_darker_percent + $button_hover);
+    color: #fff;
+  }
+
+  /// Active Effect
+  &:active {
+    @include background-image(linear-gradient(darken($text-color, 10%)darken($text-color, $button_darker_percent + $button_active)));
+    color: #fff;
+    border: 1px solid darken($text-color, $button_darker_percent + $button_active);
+  }
+}
+
+@mixin gradient_button($background-color: #00ff00, $text-color: #fff, $display: inline, $border-radius: 0, $icon: false) {
+  @include simple-button($background-color, $text-color, $display, $border-radius, $icon);
+  @include background-image(linear-gradient($background-color, darken($background-color, $button_darker_percent)));
+}
+
+@mixin shadow_button($background-color: #0000ff, $text-color: #fff, $display: inline, $border-radius: 0, $icon: false) {
+  @include simple-button($background-color, $text-color, $display, $border-radius, $icon);
+  @include box-shadow(0px 4px 0px 0px darken($background-color, 15%), 0px 6px 6px 3px rgba(#000, 0.3));
+  &:active {
+    position: relative;
+    top: 4px;
+    @include box-shadow(0px 1px 0px 0px darken($background-color, 15%), 0px 2px 2px 1px rgba(#000, 0.3));
+  }
+}
+
+@mixin icon_shadow_button($background-color: #0000ff, $text-color: #fff, $display: inline, $border-radius: 0, $icon: true, $icon-image: '/sites/all/themes/delight/default_images/default_btn.png') {
+  display: inline-block;
+  position: relative;
+  left: 41px;
+
+  a {
+    $display: inline-block;
+    @include simple-button($background-color, $text-color, $display, $border-radius, $icon: false);
+    position: relative;
+    @include box-shadow(0px 4px 0px 0px #000bb3, 3px 9px 6px 0px rgba(0, 0, 0, 0.3));
+
+    &:active {
+      position: relative;
+      top: 4px;
+      @include box-shadow(inset 5px 0 1px darken($background-color, 20%), 1px 0px 0px darken($background-color, 15%), 0px 2px 2px 1px rgba(#000, 0.3));
+    }
+  }
+
+  &:before   {
+    position: absolute;
+    content: '';
+    left: -41px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: url($icon-image) center center no-repeat;
+    background-color: $background-color;
+    background-size: 20px 20px;
+    border-right: 1px solid $text-color;
+    @include border-radius($border-radius 0 0 $border-radius);
+    @include box-shadow(0px 4px 0px 0px darken($background-color, 15%), 0px 6px 6px 3px rgba(#000, 0.3));
   }
 }
