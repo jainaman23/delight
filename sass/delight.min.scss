@@ -1,12 +1,13 @@
+/// Importing Mixins
 @import 'package/mixin/grid';
-@import 'package/raw/components/buttons';
+@import 'package/mixin/buttons';
 @import 'compass';
 
 @include make-all-packs;
 @include make-all-boxes;
 
 * {
- @include box-sizing(border-box);
+  @include box-sizing(border-box);
 }
 
 .box {
@@ -32,7 +33,22 @@ img {
 }
 
 // Buttons
-.bt {
-  @include transparent_button($text-color: #0ff00f);
+.simple-bt {
+  @include simple_button;
 }
 
+.transparent-bt {
+  @include transparent_button;
+}
+
+.gradient-bt {
+  @include gradient_button;
+}
+
+.shadow-bt {
+  @include shadow_button;
+}
+
+.icon-shadow-bt {
+  @include icon_shadow_button;
+}
