@@ -1,0 +1,20 @@
+/// Variables File
+
+/// Grid System
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+
+/// Breakpoints
+$xxs: 360px;
+$xs: 639px;
+$sm: 799px;
+$md: 1080px;
+$lg: 1280px;
+
+/// Buttons
+$button_hover: 2% !default;
+$button_active: 3% !default;
+$button_darker_percent: 5% !default;
+
+/// Default Image buttons
+$button_image: '/sites/all/themes/delight/default_images/default_btn.png';
