@@ -2,11 +2,11 @@
 
 To explore click one of the following
 
-1. [[About]]
-2. [[Prerequisite]]
-3. [[Grid System|Grid-System]]
-4. [[Components]]
-    * [[Buttons]]
+1. About
+2. Prerequisite
+3. Grid System
+4. Components
+    * Buttons
 
 ## About
 Delight is very powerful and flexible theme. It supports lot of features that will help you to design your theme. Many ready to use elements are present, you just need to pick out of the box for your design. All elements can be customise easily. This theme helps you in saving time, indeed basic and most valuable part in any project.
